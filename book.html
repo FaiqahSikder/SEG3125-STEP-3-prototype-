@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Web Page</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="navbar">
+            <span>
+                <img src="firstlogo.jpg" style="width:50px;height:50px;">
+                Fun Time Parties
+            </span>
+            <a class="btn btn-light" href="./index.html">Home</a>
+            <a class="btn btn-light" href="./characters.html">Characters</a>
+            <a class="btn btn-light" href="./contact.html">Contact Us</a>
+            <a class="btn btn-light" href="./reviews.html">Reviews</a>
+            <a class="btn btn-light" href="./work.html">Our Work</a>
+            <a class="btn btn-light" href="./book.html">Book Now</a>
+        </div>
+        <div class="container">
+            <div class="content">
+                <h1 class="contact-header">Book now</h1>
+                <strong>Please enter all the required information.</strong>
+                <label for="file">Booking progress:</label>
+                <progress class="progress-bars" id="file" value="0" max="100"></progress>
+                <form class="book-form" action="/bookConfirm.html">
+                    <input required class="book-form-input" placeholder="First name" type="text" id="fname" name="fname">
+                    <input required class="book-form-input" placeholder="Last name" type="text" id="lname" name="lname">
+                    <div class="character-container book-form-input">
+                        <div class="book-form-input">
+                            <strong>Characters you want to book:</strong>
+                        </div>
+                        <div class="book-form-input">
+                            <input type="checkbox" id="Cinderella" name="Cinderella" value="Cinderella">
+                            <label for="Cinderella">Cinderella</label><br>
+                        </div>
+                         <div class="book-form-input">
+                            <input type="checkbox" id="Belle" name="Belle" value="Belle">
+                            <label for="Belle">Belle</label><br>
+                        </div>
+                        <div class="book-form-input">
+                            <input type="checkbox" id="Aurora" name="Aurora" value="Aurora">
+                            <label for="Aurora">Aurora</label><br>
+                        </div>
+                        <div class="book-form-input">
+                            <input type="checkbox" id="Mulan" name="Mulan" value="Mulan">
+                            <label for="Mulan">Mulan</label><br>
+                        </div>
+                        <div class="book-form-input">
+                            <input type="checkbox" id="ariel" name="ariel" value="ariel">
+                            <label for="Ariel">Ariel</label><br>
+                        </div>
+                    
+                    </div>
+
+                    <input required class="book-form-input" placeholder="Date and time of party" type="text" id="date-time" name="fname">
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <script defer src="bookScript.js"></script>
+    </body>
+</html>
